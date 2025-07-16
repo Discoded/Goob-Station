@@ -17,7 +17,6 @@
 using System;
 using System.Collections.Generic;
 using Content.Goobstation.Shared.Supermatter.Systems;
-using Content.Goobstation.Shared.Supermatter.Monitor;
 using Content.Shared.Atmos;
 using Content.Shared.DoAfter;
 using Content.Shared.Whitelist;
@@ -75,18 +74,6 @@ public sealed partial class SupermatterComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite)]
     public float Power;
-
-    /// <summary>
-    /// EE Console Compatibility
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
-    public float Temperature;
-
-    /// <summary>
-    /// EE Console Compatibility
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
-    public float WasteMultiplier;
 
     /// <summary>
     /// The amount of damage we have currently
@@ -417,12 +404,6 @@ public sealed partial class SupermatterComponent : Component
     };
 
     #endregion SM Gas
-
-    #region EE
-
-    [DataField]
-    public SupermatterStatusType Status = SupermatterStatusType.Inactive;
-    #endregion EE
 }
 
 [Serializable, NetSerializable]
