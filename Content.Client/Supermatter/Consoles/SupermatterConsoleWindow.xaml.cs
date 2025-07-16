@@ -14,7 +14,7 @@ using Robust.Shared.Utility;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Content.Goobstation.Client.Supermatter.Consoles;
+namespace Content.Client.Supermatter.Consoles;
 
 [GenerateTypedNameReferences]
 public sealed partial class SupermatterConsoleWindow : FancyWindow
