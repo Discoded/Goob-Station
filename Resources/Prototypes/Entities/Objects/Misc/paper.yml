@@ -220,12 +220,6 @@
   - type: Construction
     graph: SpesosCounterfeit
     node: start
-  # Corvax-Printer-Start
-  - type: Material
-  - type: PhysicalComposition
-    materialComposition:
-      SheetPrinter: 100
-  # Corvax-Printer-End
 
 - type: entity
   name: paper scrap
